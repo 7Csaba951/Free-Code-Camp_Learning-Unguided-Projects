@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+/* THIS IS NOT MY CODE!!! I TOOK THE CODE FROM(https://stackoverflow.com/questions/38758025/how-to-make-this-image-blur-with-transparent-dark-background) */
+    height: 130vh;
+    background: url("programmer-career.webp") no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.container::before {
+    content: "";
+    display: block;
+    -webkit-filter: blur(5px) brightness(0.5);
+    -moz-filter: blur(5px) brightness(0.5);
+    -ms-filter: blur(5px) brightness(0.5);
+    -o-filter: blur(5px) brightness(0.5);
+    filter: blur(5px) brightness(0.5);
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
+    background: inherit;
+    z-index: 0;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+}
+
+/* UNTIL HERE */
+
+#title {
+    font-size: 2.5em;
+    text-align: center;
+    color: #d34300;
+    padding-top: 20px;
+    margin-bottom: 80px;
+}
+
+#description {
+    padding: 10px;
+    width: 80%;
+    text-align: justify;
+    margin: 10px auto;
+    margin-bottom: 50px;
+    font-size: 1.3em;
+    color: #d34300;
+    background-color: #161616;
+    border-radius: 10px;
+    border: 10px dashed rgba(128, 128, 128, 1);
+}
+
+.header-spans {
+    color: chartreuse;
+    font-weight: 800;
+    font-size: 1.1em;
+    margin-right: 7px;
+    margin-left: 7px;
+}
+
+#beginning-p {
+    text-align: center;
+    width: 40%;
+    margin: 10px auto;
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: #d34300;
+    border: 3px solid rgba(128, 128, 128, 1);
+    background-color: #161616;
+    border-radius: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    position: absolute;
+    background-color: #161616 !important;
+    color: #d34300;
+    font-size: 1em;
+    width: 120px;
+    height: 7%;
+    bottom: -75px;
+}
+
+input[type="text"], input[type="email"], input[type="number"], select, textarea {
+    position: relative;
+    background: rgba(128, 128, 128, 1);
+    border: 3px solid chartreuse;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="text"]::placeholder, input[type="email"]::placeholder, input[type="number"]::placeholder, textarea::placeholder {
+    color: black;
+}
+fieldset {
+    border: 5px solid rgba(128, 128, 128, 1);
+    background-color: #161616;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+fieldset > p {
+    color: #d34300;
+    text-align: center;
+    font-weight: 800;
+}
+
+label {
+    color: rgba(128, 128, 128, 1);
+    padding: 5px;
+}
+
+form {
+    width: 80%;
+    box-sizing: border-box;
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 95%;
+    margin: 10px auto;
+}
+
+hr {
+    margin: 10px auto;
+    width: 90%;
+    height: 1%;
+    border-color: red;
+    background-color: red;
+}
+
+fieldset > #additional-comments {
+    padding: 0;
+    margin: 0;
+}
+
+textarea {
+    width: 100%;
+    max-width: 100%;
+    margin: 5px;
+    right: 5px;
+}
+
+select {
+    margin: 10px;
+}

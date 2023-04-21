@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Survey app for research purposes">
+    <meta name="keywords" content="Programmer, Developer, Carreer, Survey, Research">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Survey Form</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="content">
+
+            <header>
+
+                <h1 id="title">Survey Form</h1>
+                <p id="description">This is a <span class="header-spans" id="survey-page">Survey Form</span>. By filling out the survey below, you are helping a <span class="header-spans" id="research-project">Research Project</span>. This survey acts <span class="header-spans" id="poll">Like a Poll</span>. The research project, asks the users, about their plans for a <span class="header-spans" id="developer-job">Developer Job</span>, and what specific <span class="header-spans" id="career">Careers</span> would they be willing to enroll in.<br>There are questions that you do not have to answer in order to complete the survey, altough most questions have to be filled out.</p>
+
+            </header>
+            <main>
+
+                <p id="beginning-p">This Is Where The Survey Begins!</p>
+                <form id="survey-form" method="post" action="https://register-demo.freecodecamp.org">
+
+                    <fieldset id="user-data">
+                        <p>Please fill out the form with the required informations: </p>
+                        <hr>
+                        <label for="name" id="name-label">Please Input Your Name: <input type="text" id="name" name="name-input" placeholder="For Example: Gabe" required></label>
+
+                        <label for="email" id="email-label">Please Input Your Email: <input type="email" id="email" name="email-input" placeholder="Like: gabe.email@gmail.com" minlength="5" maxlength="30" required></label>
+
+                        <label for="number" id="number-label">Please Input Your Age: <input type="number" id="number" pattern="[a-z0-5]{8,}" min="5" max="130" placeholder="In Numbers(5-130)"></label>
+
+                    </fieldset>
+
+
+                    <fieldset id="user-experience">
+
+                        <p>Do you have any experience in the IT industry?: </p>
+                        <hr>
+                        <label for="none" id="none-label"><input type="radio" id="none" name="experience"> None</label>
+
+                        <label for="little" id="little-label"><input type="radio" id="little" name="experience"> Little</label>
+
+                        <label for="intermediate" id="intermediate-label"><input type="radio" id="intermediate" name="experience"> Intermediate</label>
+
+                        <label for="high" id="high-label"><input type="radio" id="high" name="experience"> High</label>
+
+                    </fieldset>
+
+
+                    <fieldset id="desired-career">
+
+                        <p>What career would you be likely to choose?: </p>
+                        <hr>
+                        <label for="dropdown" id="select-label">
+                            <select id="dropdown">
+
+                                <option value="">Choose an Option</option>
+                                <option value="1" name="front-end-option">Front-End Developer</option>
+                                <option value="2" name="back-end-option">Back-End Developer</option>
+                                <option value="3" name="full-stack-option">Full-Stack Developer</option>
+                                <option value="4" name="cybersecurity-option">Cybersecurity</option>
+                                <option value="5" name="other-option">Other</option>
+
+                            </select>
+                        </label>
+
+                    </fieldset>
+
+
+
+                    <fieldset id="desired-working-type">
+
+                        <p>What type of work would you be likely to enroll in?: </p>
+                        <hr>
+                        <label for="remote" id="remote-label"><input type="radio" id="remote" name="radio-input" value="remote" required> Remote</label>
+
+                        <label for="office-work" id="office-work-label"> <input type="radio" id="office-work" name="radio-input" value="office-work" required> Office Work</label>
+
+                    </fieldset>
+
+
+
+                    <fieldset id="desired-learning-type">
+
+                        <p>What type of learning would you be most likely to choose?: </p>
+                        <hr id="dk-wassup-with-this">
+                        <label for="videos" id="videos-label"><input type="checkbox" id="videos" value="videos"> Videos</label>
+
+                        <label for="books/reading" id="books/reading-label"><input type="checkbox" id="books/reading" value="books/reading"> Books/Reading</label>
+
+                        <label for="audio" id="audio-label"><input type="checkbox" id="audio" value="audio"> Audio</label>
+
+                        <label for="online-tutorials" id="online-tutorials-label"><input type="checkbox" id="online-tutorials" value="online-tutorials"> Online Tutorials</label>
+
+                        <label for="other" id="other-label"><input type="checkbox" id="other" value=""> Other</label>
+
+                    </fieldset>
+
+
+                    <fieldset id="additional-comments">
+
+                        <p>Additional Comments:</p>
+                        <hr>
+                        <label for="comments" id="comments-label"><textarea id="comments" rows="10" cols="10"></textarea></label>
+
+                        </fieldset>
+
+                    <input type="submit" id="submit-button" value="Submit">
+
+                </form>
+
+            </main>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
