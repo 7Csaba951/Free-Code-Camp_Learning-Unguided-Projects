@@ -89,6 +89,8 @@ html {
 label {
     display: block;
     margin-bottom: 10px;
+    color: rgba(128, 128, 128, 1);
+    padding: 5px;
 }
 
 input[type="submit"] {
@@ -124,11 +126,6 @@ fieldset > p {
     color: #d34300;
     text-align: center;
     font-weight: 800;
-}
-
-label {
-    color: rgba(128, 128, 128, 1);
-    padding: 5px;
 }
 
 form {
