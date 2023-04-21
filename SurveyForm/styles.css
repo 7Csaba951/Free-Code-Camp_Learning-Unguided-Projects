@@ -162,3 +162,7 @@ textarea {
 select {
     margin: 10px;
 }
+
+#dk-wassup-with-this {
+    border: 1px solid red;
+}
